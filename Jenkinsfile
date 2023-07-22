@@ -1,7 +1,11 @@
 pipeline {
-    agent any
+    agent {
+    node {
+        label1 'worernode2'
 
-    stages {
+    } 
+    }
+        stages {
         stage('Checkout') {
             steps {
                 // Get some code from a GitHub repository
